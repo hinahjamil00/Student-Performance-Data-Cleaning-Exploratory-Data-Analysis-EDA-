@@ -1,110 +1,73 @@
-# 🎓 Student Performance Data Cleaning & EDA
+# 📊 Student Performance Analysis (EDA Project)
 
-This project focuses on cleaning and exploring a student performance dataset to extract meaningful insights from academic data.
-
----
-
-## 📌 Objective
-
-The main goal of this project is to:
-- Clean raw educational data
-- Handle categorical variables
-- Perform exploratory data analysis (EDA)
-- Create a meaningful target variable for future modeling
+## 📌 Overview
+This project analyzes student performance data to understand how different factors like gender, parental education, lunch type, and test preparation affect student scores.
 
 ---
 
-## 📂 Dataset Information
-
-The dataset contains student information including:
-
-- Gender
-- Race/Ethnicity
-- Parental level of education
-- Lunch type
-- Test preparation course
-- Math score
-- Reading score
-- Writing score
+## 📂 Dataset Features
+- gender  
+- race/ethnicity  
+- parental level of education  
+- lunch  
+- test preparation course  
+- math score  
+- reading score  
+- writing score  
 
 ---
 
-## 🧹 Data Cleaning Steps
+## ⚙️ Steps Performed
 
-- Checked and confirmed no missing values
-- Checked and removed duplicate rows (if any)
-- Ensured dataset consistency
+### 1. Data Loading
+Loaded dataset using pandas.
 
----
+### 2. Data Cleaning
+- Checked missing values  
+- Checked duplicate rows (full row-wise check)
 
-## 🔧 Feature Engineering
+### 3. Exploratory Data Analysis (EDA)
+- Summary statistics  
+- Score distributions  
+- Categorical analysis  
 
-A new feature was created:
+### 4. Feature Engineering
+Created new target feature:
+- Excellent  
+- Average  
+- Poor  
 
-### 📊 Average Score
-Calculated using:
-- Math score
-- Reading score
-- Writing score
+### 5. Encoding
+Converted categorical variables into numeric form.
 
----
+### 6. Visualization
+- Count plots  
+- Score distributions  
+- Correlation heatmaps  
 
-### 🎯 Performance Category (Target Variable)
-
-Based on average score:
-
-- **Excellent** → 80 and above  
-- **Average** → 60 to 79  
-- **Poor** → below 60  
-
----
-
-## 🔄 Encoding
-
-- One-Hot Encoding applied to categorical variables:
-  - Gender
-  - Race/Ethnicity
-  - Lunch
-  - Test preparation course
-
-- Ordinal encoding applied to:
-  - Parental level of education
+### 7. Correlation Analysis
+Checked relationships between features and student performance.
 
 ---
 
-## 📊 Exploratory Data Analysis (EDA)
-
-- Distribution of performance categories
-- Score distribution analysis
-- Correlation analysis
-- Data visualization using histograms and count plots
+## 📊 Key Insights
+- Test preparation improves performance  
+- Parental education affects scores  
+- Reading, writing, and math scores are strongly correlated  
 
 ---
 
-## 🛠️ Tools Used
-
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
+## 🚀 Tools Used
+Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
 
 ---
 
-## 📌 Key Insights
-
-- Student performance varies significantly based on test preparation
-- Parental education level has an influence on scores
-- Average score helps in simplifying performance classification
-
----
-
-## 🚀 Future Work
-
-- Apply machine learning models
-- Build classification models for performance prediction
-- Improve feature engineering
+## 📌 Future Work
+- Apply machine learning models  
+- Improve feature engineering  
+- Build prediction system  
 
 ---
 
-## 📁 Project Structure
+## ⭐ Note
+This project is for learning and practice of data analysis.
